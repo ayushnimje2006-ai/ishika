@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ishhuu's World</title>
+<style>
+body{margin:0;font-family:'Segoe UI',sans-serif;background:linear-gradient(to right,#ffe0ec,#fff5f9);text-align:center;color:#333;}
+header{padding:40px 20px;font-size:2.5rem;font-weight:bold;color:#ff4d88;}
+.section{padding:30px 20px;}
+.photo{width:200px;height:200px;border-radius:20px;object-fit:cover;margin:10px;box-shadow:0 4px 10px rgba(0,0,0,0.2);} 
+.button{margin:20px;padding:12px 25px;background:#ff4d88;color:white;border:none;border-radius:25px;cursor:pointer;font-size:1rem;transition:0.3s;}
+.button:hover{background:#e6005c;}
+.shayari{font-style:italic;font-size:1.2rem;color:#555;margin-top:20px;white-space:pre-line;}
+.page{display:none;}
+</style>
+</head>
+<body>
+
+<!-- HOME PAGE -->
+<div id="home" class="page" style="display:block">
+<header>🌸 Ishhuu's World 🌸</header>
+<div class="section">
+<p>
+In a world full of ordinary moments, she shines like a soft sunset 🌅.
+Ishhuu is not just a name, it's a feeling — gentle, beautiful, and unforgettable.
+Her smile carries warmth, her presence feels like peace, and her soul is poetry in motion.
+</p>
+</div>
+<div class="section">
+<img src="ishika.jpg.jpeg" class="photo">
+<img src="ishika1.jpg.jpeg" class="photo">
+</div>
+<button class="button" onclick="openPage('dumps')">Ishhh Dumps 💖</button>
+</div>
+
+<!-- DUMPS PAGE -->
+<div id="dumps" class="page">
+<header>💖 Ishhh Dumps 💖</header>
+<div class="section">
+<img src="ishika3.jpg.jpeg" class="photo">
+<img src="ishika2.jpg.jpeg" class="photo">
+<img src="ishika5.jpg.jpeg" class="photo">
+</div>
+<button class="button" onclick="openPage('ishika')">For Ishika 💕</button>
+</div>
+
+<!-- ISHIKA PAGE -->
+<div id="ishika" class="page">
+<header>For Ishika 💕</header>
+<div class="section">
+<p class="shayari">
+Ishika... 🌙
+
+Tera naam hi ek kahani hai,
+Har lafz mein teri nishani hai.
+
+Teri muskaan se roshan hai duniya meri,
+Tu hi meri khushi, tu hi meri zindagani hai 💖
+
+Tujhe dekhu toh waqt ruk jaaye,
+Dil bas tera hi ho jaaye...
+</p>
+<img src="ishika4.jpg.jpeg" class="photo">
+<img src="ishika6.jpg.jpeg" class="photo">
+</div>
+<button class="button" onclick="openPage('proposal')">Get More To Know 💌</button>
+</div>
+
+<!-- PROPOSAL PAGE -->
+<div id="proposal" class="page">
+<header>💍 A Proposal 💍</header>
+<div class="section">
+<p class="shayari">
+Ishikaa... ❤️
+
+Main shabd nahi jo likh diya jaaun,
+Main ehsaas hoon jo sirf mehsoos kiya jaata hai.
+
+Aur jo mehsoos hota hai...
+Woh tum ho 💖
+
+Kya tum meri zindagi banogi?
+Kya tum meri har subah aur har shaam banogi?
+</p>
+</div>
+<button class="button" onclick="openPage('final')">Click Me 💖</button>
+</div>
+
+<!-- FINAL PAGE -->
+<div id="final" class="page">
+<header>🌹 For You Ishika 🌹</header>
+<div class="section">
+<h2 style="color:#ff0066;">💖 I LOVE YOU ISHIKA 💖</h2>
+<p>From Ayush ❤️</p>
+<img src="ishika8.jpg.jpeg" class="photo">
+</div>
+</div>
+
+<script>
+function openPage(pageId){
+  document.querySelectorAll('.page').forEach(p=>p.style.display='none');
+  document.getElementById(pageId).style.display='block';
+}
+</script>
+
+</body>
+</html>
